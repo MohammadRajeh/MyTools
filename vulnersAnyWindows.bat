@@ -1,9 +1,9 @@
-:: Local Privilege Escalation Workshop - Sagi Shahar (@s4gi_)
+:: Local Privilege Escalation Workshop - Mohammad Rajeh
 @echo off
 setlocal EnableDelayedExpansion
 
 :: This portion of code is used for multiple colors in .bat
-:: https://stackoverflow.com/questions/4339649/how-to-have-multiple-colors-in-a-windows-batch-file/5344911
+:: 
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
   set "DEL=%%a"
 )
@@ -18,8 +18,8 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 :::      |~~|===|--|===|~|~~|%%|~~~|--|:::|=|~|----|==|---|=|
 :::hjw   ^--^---'--^---^-^--^--^---'--^---^-^-^-==-^--^---^-'
 :::
-:::     Local Privilege Escalation Workshop - Windows Installer
-:::                      Sagi Shahar (@s4gi_)
+:::     To be Vulnerable Any Window Machine  - Windows Installer
+:::                      Mohammad Rajeh
 
 for /f "delims=: tokens=*" %%A in ('findstr /b ::: "%~f0"') do (
   echo(%%A
@@ -246,8 +246,8 @@ del /f X
 pause
 exit /b
 
-:: This portion of code used for multiple colors in .bat
-:: https://stackoverflow.com/questions/4339649/how-to-have-multiple-colors-in-a-windows-batch-file/5344911
+:: 
+:: 
 :color
 set "param=^%~2" !
 set "param=!param:"=\"!"
